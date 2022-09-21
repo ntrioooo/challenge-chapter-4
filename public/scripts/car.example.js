@@ -31,7 +31,8 @@ class Car {
     this.capacity = capacity;
     this.description = description;
     this.transmission = transmission;
-    this.available = available;
+    // Dengan supir atau bukan
+    this.available = available; 
     this.type = type;
     this.year = year;
     this.options = options;
@@ -41,12 +42,18 @@ class Car {
 
   render() {
     return `
-      <p>id: <b>${this.id}</b></p>
-      <p>plate: <b>${this.plate}</b></p>
-      <p>manufacture: <b>${this.manufacture}</b></p>
-      <p>model: <b>${this.model}</b></p>
-      <p>available at: <b>${this.availableAt}</b></p>
-      <img src="${this.image}" alt="${this.manufacture}" width="64px">
+        <div class="card mb-3">
+          <img src="${this.image}" class="card-img-top" height="400" alt="${this.manufacture}">
+          <div class="card-body">
+            <p class="card-text">${this.model}</p>
+            <h5 class="card-title">Rp.${this.rentPerDay} / Hari</h5>
+            <p class="card-text">${this.description}</p>
+            <p class="card-text">${this.capacity}</p>
+            <p class="card-text">${this.transmission}</p>
+            <p class="card-text">${this.year}</p>
+            <a href="#" class="btn btn-primary">Pilih Mobil</a>
+          </div>
+        </div>
     `;
   }
 }

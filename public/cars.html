@@ -39,7 +39,7 @@
     </nav>
     <!-- END NAVBAR -->
     
-        <!-- Off Canvas -->
+    <!-- Off Canvas -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
           <h5 id="offcanvasRightLabel">BCR</h5>
@@ -70,19 +70,75 @@
         <!-- HOME -->
     <main id="home">
         <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-6 my-auto text__animation">
-            <h2>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h2>
-            <p class="mt-3">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas<br class="d-none d-sm-block"> terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu <br class="d-none d-sm-block"> untuk sewa mobil selama 24 jam.</p>
-            <button type="button" class="button">Mulai Sewa Mobil</button>
-            </div>
-            <div class="col-md-6">
-            <img src="images/img_car.png" alt="Image Car" class="img-car">
+            <div class="row">
+                <div class="col-md-6 my-auto text__animation">
+                <h2>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h2>
+                <p class="mt-3">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas<br class="d-none d-sm-block"> terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu <br class="d-none d-sm-block"> untuk sewa mobil selama 24 jam.</p>
+                <!-- <button type="button" class="button">Mulai Sewa Mobil</button> -->
+                </div>
+                <div class="col-md-6">
+                <img src="images/img_car.png" alt="Image Car" class="img-car">
             </div>
         </div>
-        </div>
+    </div>
     </main>
-        <!-- Footer -->
+
+    <!-- FORM -->
+    
+      <div class="container">
+          <div class="row justify-content-center form">
+              <div class="col-2">
+                  <label for="tipeDriver">Tipe Driver</label>
+                  <div class="input-group mb-3">
+                      <select class="form-select" id="inputGroupSelect01">
+                        <option selected disabled hidden>Pilih Tipe Driver</option>
+                        <option value="Dengan Sopir">Dengan Sopir</option>
+                        <option value="Tanpa Sopir">Tanpa Sopir (Lepas Tangan)</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="col-2">
+                  <label for="tipeDriver">Tanggal</label>
+                  <div class="input-group mb-3">
+                      <input type="date" name="date" id="date" placeholder="Pilih Tanggal">
+                  </div>
+              </div>
+              <div class="col-2">
+                  <label for="tipeDriver">Waktu Jemput/Ambil</label>
+                  <div class="input-group mb-3">
+                    <input type="time" name="name" id="time" placeholder="Pilih Waktu" step="3600">
+                  </div>
+              </div>
+              <div class="col-2">
+                  <label for="tipeDriver">Jumlah Penumpang (Optional)</label>
+                  <div class="input-group mb-3">
+                      <input type="number" name="penumpang" id="penumpang" placeholder="Jumlah Penumpang">
+                  </div>
+              </div>
+              <div class="col-2"><br>
+                <button type="submit" class="btn btn-primary mb-3 find-car" id="find-car">Cari Mobil</button>
+                <button type="submit" class="btn btn-primary mb-3 find-car" id="clear-car">Clear</button>
+              </div>
+            </div>
+      </div>
+
+      <!-- Card Cars -->
+      <div class="container card-cars">
+        <div class="row" id="cars-container">
+            
+          </div>
+        </div>
+      </div>
+      <!-- End Card Cars -->
+    
+    <!-- End Form -->
+
+    <button id="load-btn">Load</button>
+    <button id="clear-btn">Clear</button>
+    <!-- <div id="cars-container"></div> -->
+    
+ 
+    <!-- Footer -->
     <footer>
         <div class="container">
           <div class="row">
@@ -115,6 +171,12 @@
         </div>
       </footer>
       <!-- End Footer -->
+
+      <!-- JS Index Example -->
+      <script type="text/javascript" src="./scripts/binar.js"></script>
+      <script type="text/javascript" src="./scripts/app.example.js"></script>
+      <script type="text/javascript" src="./scripts/car.example.js"></script>
+      <script type="text/javascript" src="./scripts/main.example.js"></script>
         
   
       <!-- Optional JavaScript; choose one of the two! -->

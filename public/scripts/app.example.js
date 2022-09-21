@@ -1,7 +1,7 @@
 class App {
   constructor() {
-    this.clearButton = document.getElementById("clear-btn");
-    this.loadButton = document.getElementById("load-btn");
+    this.clearButton = document.getElementById("clear-car");
+    this.loadButton = document.getElementById("find-car");
     this.carContainerElement = document.getElementById("cars-container");
   }
 
@@ -16,6 +16,7 @@ class App {
   run = () => {
     Car.list.forEach((car) => {
       const node = document.createElement("div");
+      node.className = 'col-md-3';
       node.innerHTML = car.render();
       this.carContainerElement.appendChild(node);
     });
