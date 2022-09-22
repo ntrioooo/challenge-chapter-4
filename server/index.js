@@ -7,7 +7,7 @@ const path = require('path');
 const port = 8000;
 const hostname = '127.0.0.1';
 
-const PUBLIC_DIRECTORY = path.join(__dirname, 'public');
+// const PUBLIC_DIRECTORY = path.join(__dirname, 'public');
 
 function onRequest(req, res) {
     switch (req.url) {

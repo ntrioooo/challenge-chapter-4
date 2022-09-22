@@ -39,8 +39,10 @@ class Car {
     this.specs = specs;
     this.availableAt = availableAt;
   }
+  
 
   render() {
+    
     return `
         <div class="card mb-3">
           <img src="${this.image}" class="card-img-top" height="400" alt="${this.manufacture}">
