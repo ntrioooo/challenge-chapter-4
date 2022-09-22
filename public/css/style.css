@@ -257,6 +257,33 @@ footer {
 
 /* End Footer */
 
+/* JS */
+
+.btn-js {
+    border-radius: 2px;
+    width: 100%;
+    padding: 8px 12px;
+    font-family: 'Helvetica';
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.i-js {
+    color: rgba(138, 138, 138, 1);
+}
+
+.text-js {
+    font-family: 'Helvetica';
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-title{
+    font-family: 'Helvetica';
+    font-size: 16px;
+    font-weight: 700;
+}
+
 /* Form */
 .form {
     border-radius: 8px;
@@ -266,6 +293,61 @@ footer {
     margin-top: -42px;
     z-index: 99;
     position: relative;
+}
+
+.find-car {
+    background-color: #5CB85F;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Helvetica';
+    padding: 8px 12px;
+}
+
+.clear-car {
+    background-color: #5CB85F;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Helvetica';
+    padding: 8px 12px;
+}
+
+input#date {
+    width: 210.75px;
+    height: 36px;
+}
+
+select#tipe-driver {
+    width: 210.75px;
+    height: 36px;
+}
+
+input#time {
+    width: 210.75px;
+    height: 36px;
+}
+
+input#penumpang {
+    width: 210.75px;
+    height: 36px;
+}
+
+input#penumpang::placeholder {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8A8A8A;
+    padding: 9px 12px;
+}
+
+input {
+    border: 1px solid #D0D0D0;
+    border-radius: 2px;
 }
 /* End Form */
 
