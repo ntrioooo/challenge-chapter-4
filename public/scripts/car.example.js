@@ -53,6 +53,8 @@ class Car {
             <p class="card-text">${this.capacity}</p>
             <p class="card-text">${this.transmission}</p>
             <p class="card-text">${this.year}</p>
+            <p class="card-text">${this.available}</p>
+            <p class="card-text">${this.availableAt}</p>
             <a href="#" class="btn btn-primary">Pilih Mobil</a>
           </div>
         </div>

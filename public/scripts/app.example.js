@@ -26,18 +26,20 @@ class App {
     }
     
     Car.list.forEach((car) => {
-      let dateTime = this.availAt.value + "T" + this.time.value;
+      let dateTime = `${this.availAt.value}T${this.time.value}`;
+      // console.log(dateTime);
       let formDate = Date.parse(dateTime);
+      // console.log(formDate);
       let waktu = Date.parse(car.availableAt);
+      // console.log(waktu);
       let capacity = this.capacity.value;
-      let driver = this.driverAvail.value;
-      if (driver == 'Dengan Sopir') {
-        driver == true;
-      } else {
-        driver == false;
-      }
+      // console.log(capacity);
+      
+      const driver = this.driverAvail.value == 'Dengan Sopir' ? true : false;
+      console.log(driver);
 
-      if (car.available == driver && waktu >= formDate && car.capacity >= capacity) {
+      if (car['available'] == driver && waktu >= formDate && car['capacity'] >= capacity) {
+        console.log('berhasil');
         const node = document.createElement("div");
         node.className = 'col-md-3';
         node.innerHTML = car.render();
