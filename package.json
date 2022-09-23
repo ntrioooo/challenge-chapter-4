@@ -7,8 +7,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "nodemon server/index.js",
-    "test": "node public/scripts/car.example.js"
+    "start": "nodemon server/index.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
